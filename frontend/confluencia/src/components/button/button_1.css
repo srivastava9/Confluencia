@@ -8,3 +8,14 @@
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+.button {
+  width: 165px;
+  height: 52px;
+  background-color: #27b660;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* identical to box height, or 0px */
+  color: #ffffff;
+}
