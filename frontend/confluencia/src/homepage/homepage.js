@@ -1,24 +1,100 @@
+/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable react/jsx-pascal-case */
 import React, { Component } from "react";
+import logo from "./logo.png";
 import "./homepage.css";
 import hod from "./hod.png";
 import mukeshJain from "./Mukesh_Jain.png";
 import atulT from "./at.png";
+import spons_1 from "./sponsors/image_1.png";
+import spons_2 from "./sponsors/image_2.png";
+import spons_3 from "./sponsors/image_3.png";
+import spons_4 from "./sponsors/image_4.png";
+import spons_5 from "./sponsors/image_5.png";
+import spons_6 from "./sponsors/image_6.png";
 import semiColon from "./Vector.png";
-import homepage_3_image from "./events_bhumika.jpeg";
+import Event_1_image from "./event_1_image.jpeg";
+import Event_4_image from "./event_4_image.png";
+import Events from "../components/events/events.js";
 import Button_homepage from "../components/button/button_1.js";
+import Event_3_image from "./event_3_image.png";
+import Event_2_image from "./event_2_image.png";
 import Title_homepage from "../components/title_homepage/title_homepage.js";
 import homepage_1_image from "./homepage_1_c.jpg";
 class Homepage extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      eventsData: [
+        {
+          id: 1,
+          title: "Bhumika - Management Hackathon",
+          about:
+            "BHUMIKA provides participants with an opportunity to test various skills required while working for an organization in the corporate world.It will be an occasion where one can innovate, build a team, take decisions and numerous other things.",
+          img: Event_1_image
+        },
+        {
+          id: 2,
+          title: "Google Startup Weekend",
+          about:
+            "The event Techstars startup weekend powered by Google was organised in collaboration with E-summit 2018. It was a 54 hour long event where participants went through a process, to generate a startup idea. They were divided into groups and were asked to work on an idea. Mentors from different industries were invited to interact with the teams and improve their ideas.",
+          img: Event_2_image
+        },
+        {
+          id: 3,
+          title: "Corporata",
+          about:
+            "Corporata provides the participants with a chance to build upon the financial repertoire and sharpen their business acumen. It also provides a platform to boast about their financial literacy and general economic awareness. It tests understanding of core financial knowledge against the best in the game and astound the jury with their business insights.",
+          img: Event_3_image
+        },
+        {
+          id: 4,
+          title: "Marksense ",
+          about:
+            "In three stages, from general awareness of logos of the companies to re-introducing a failed product in the market, the participants must prove that they have the potential to rule the market.",
+          img: Event_4_image
+        }
+      ],
+      active_index: 1
+    };
+    this.prevSlide = this.prevSlide.bind(this);
   }
+  prevSlide() {
+    if (this.state.active_index === 1) {
+      this.setState({
+        active_index: 4
+      });
+    } else {
+      this.setState({
+        active_index: this.state.active_index - 1
+      });
+    }
+  }
+  nextSlide = () => {
+    if (this.state.active_index === 4) {
+      this.setState({
+        active_index: 1
+      });
+    } else {
+      this.setState({
+        active_index: this.state.active_index + 1
+      });
+    }
+  };
 
   render() {
+    const activeEvent = this.state.eventsData.map(i => {
+      if (i.id === this.state.active_index) {
+        return (
+          <Events eventAbout={i.about} eventTitle={i.title} eventImg={i.img} />
+        );
+      }
+    });
     return (
       <div>
         <div className="homepage_1">
           <div className="homepage_1_grey">
+            <img className="logo" src={logo} />
             <div className="homepage_1_grey_textarea">
               <div className="homepage_1_grey_title">
                 The Annual Business Summit - IIT Roorkee
@@ -35,7 +111,14 @@ class Homepage extends Component {
               <img src={homepage_1_image} className="homepage_1_image" />
             </div>
             <div className="homepage_1_button">
-              <Button_homepage name="Register" />
+              <a
+                class="register_a"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf_eXlUKwGmKc0736n-AdpmSlGMiYn4fV-tNwSvcdM4psK1aA/viewform"
+              >
+                <Button_homepage name="Register" />
+              </a>
             </div>
           </div>
         </div>
@@ -71,14 +154,21 @@ class Homepage extends Component {
             students from all domains and backgrounds.
           </div>
           <div className="homepage_2_button">
-            <Button_homepage name="Team" />
+            {/* <Button_homepage name="Team" /> */}
           </div>
         </div>
         <div className="homepage_3">
           <div className="homepage_3_title">
             <Title_homepage name="Events" style={{ width: "129px" }} />
           </div>
-          <div className="homepage_3_textbox">
+          <div className="prevslide" onClick={this.prevSlide}>
+            <div className="prevslide_arrow"></div>
+          </div>
+          {activeEvent}
+          <div className="nextslide" onClick={this.nextSlide}>
+            <div className="nextslide_arrow"></div>
+          </div>
+          {/* <div className="homepage_3_textbox">
             <div className="homepage_3_text_title">
               Bhumika - Management Hackathon
             </div>
@@ -108,7 +198,7 @@ class Homepage extends Component {
               />
             </div>
           </div>
-          <img src={homepage_3_image} className="homepage_3_image" />
+          <img src={homepage_3_image} className="homepage_3_image" /> */}
         </div>
         <div className="homepage_4">
           <div className="homepage_4_title">
@@ -168,6 +258,32 @@ class Homepage extends Component {
             Head of Department <br />
             Department of Management Studies, <br />
             IIT Roorkee
+          </div>
+        </div>
+        <div className="homepage_6">
+          <div className="homepage_6_title">
+            <Title_homepage name="Past Sponsors" style={{ width: "260px" }} />
+          </div>
+          <div className="spons_div">
+            <div className="spons_image">
+              <img src={spons_1} />
+            </div>
+            <div className="spons_image">
+              <img src={spons_2} />
+            </div>
+            <div className="spons_image">
+              <img src={spons_3} />
+            </div>
+            <br />
+            <div className="spons_image">
+              <img src={spons_4} />
+            </div>
+            <div className="spons_image">
+              <img src={spons_5} />
+            </div>
+            <div className="spons_image">
+              <img src={spons_6} />
+            </div>
           </div>
         </div>
       </div>

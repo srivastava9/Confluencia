@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  cursor: pointer;
   /* identical to box height, or 0px */
   color: #ffffff;
 }
