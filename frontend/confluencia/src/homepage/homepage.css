@@ -2,6 +2,9 @@
   width: 1000px;
   height: 820px;
   background: #eeeeee;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 .logo {
   position: absolute;
@@ -72,7 +75,7 @@ a.register_a {
   width: 660px;
   height: 500px;
   left: 860px;
-  top: 88px;
+  top: 118px;
 }
 .homepage_1_button {
   position: absolute;
@@ -87,6 +90,7 @@ a.register_a {
 .homepage_2_title {
   position: absolute;
   left: 200px;
+  top: 1000px;
 }
 .homepage_2_text1 {
   position: absolute;
