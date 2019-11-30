@@ -21,6 +21,7 @@ import Event_3_image from "./event_3_image.png";
 import Event_2_image from "./event_2_image.png";
 import Title_homepage from "../components/title_homepage/title_homepage.js";
 import homepage_1_image from "./homepage_1_c.jpg";
+import Footer from "../components/footer/footer.js";
 class Homepage extends Component {
   constructor(props) {
     super(props);
@@ -262,7 +263,7 @@ class Homepage extends Component {
         </div>
         <div className="homepage_6">
           <div className="homepage_6_title">
-            <Title_homepage name="Past Sponsors" style={{ width: "260px" }} />
+            <Title_homepage name="Past Sponsors" style={{ width: "265px" }} />
           </div>
           <div className="spons_div">
             <div className="spons_image">
@@ -285,6 +286,9 @@ class Homepage extends Component {
               <img src={spons_6} />
             </div>
           </div>
+        </div>
+        <div className="homepage_7">
+          <Footer />
         </div>
       </div>
     );
