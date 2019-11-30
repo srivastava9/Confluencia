@@ -7,7 +7,7 @@ function Button_homepage(props) {
       <p
         style={{
           height: "0px",
-          fontFamily: " Lato",
+          fontFamily: "Lato",
           fontStyle: "normal",
           fontWeight: "normal",
           fontSize: "20px",
