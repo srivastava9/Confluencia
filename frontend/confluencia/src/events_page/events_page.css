@@ -1,0 +1,21 @@
+.eventspage_heading_1 {
+  text-align: left;
+  margin-top: 198px;
+  font-family: "Lato";
+  font-size: 32px;
+  color: #525252;
+  margin-left: 241px;
+}
+.eventspage_all_events {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 240px;
+  margin-top: 36px;
+  /* justify-content: space-around; */
+}
+.eventspage_event_1 {
+  /* margin-left: 250px; */
+}
+.eventspage_event_2 {
+  margin-left: 10px;
+}
