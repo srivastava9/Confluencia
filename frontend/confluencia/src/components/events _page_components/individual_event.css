@@ -1,0 +1,22 @@
+.each_event_container {
+  height: 480px;
+  width: 700px;
+  overflow: hidden;
+}
+img {
+  height: 480px;
+  position: relative;
+  left: -40px;
+  z-index: -1; 
+}
+.each_event_name {
+  position: absolute;
+  margin-top:-100px;
+  margin-left: 50px;
+  font-family: "Lato";
+  font-size: 70px;
+  font-style: Bold;
+  color: #e5e5e5;
+  letter-spacing: 6%;
+  
+}

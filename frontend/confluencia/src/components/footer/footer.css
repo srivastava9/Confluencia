@@ -1,13 +1,13 @@
 .footer {
   display: flex;
   justify-content: space-around;
-  width: "500px";
   line-height: 40px;
   background-color: #ebebeb;
-  padding: 100px;
+  padding: 70px;
   text-align: left;
   font-family: "Lato";
   color: #666666;
+  
 }
 .heading {
   font-weight: bold;

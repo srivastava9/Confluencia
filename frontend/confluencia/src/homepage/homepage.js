@@ -22,6 +22,9 @@ import Event_2_image from "./event_2_image.png";
 import Title_homepage from "../components/title_homepage/title_homepage.js";
 import homepage_1_image from "./homepage_1_c.jpg";
 import Footer from "../components/footer/footer.js";
+import Revolution_image from "./revolution_image.jpg";
+import Abhivyakti_image from "./abhivyakti_image.jpg";
+import Quizza_image from "./quizza_image.jpg";
 class Homepage extends Component {
   constructor(props) {
     super(props);
@@ -29,32 +32,32 @@ class Homepage extends Component {
       eventsData: [
         {
           id: 1,
-          title: "Bhumika - Management Hackathon",
+          title: "Revolution",
           about:
-            "BHUMIKA provides participants with an opportunity to test various skills required while working for an organization in the corporate world.It will be an occasion where one can innovate, build a team, take decisions and numerous other things.",
-          img: Event_1_image
+            "Revolution, a case study competition strives to elicit critical thinking against perplexity or a dilemma posed to check the depth of the intellect prevalent among the participants. Sustainable development and strategy alignment is the need of the hour and a rational and 360-degree analysis of a situation before taking sides is a 'must-have' quality for a manager.",
+          img: Revolution_image
         },
         {
           id: 2,
-          title: "Google Startup Weekend",
+          title: "Abhivyakti",
           about:
-            "The event Techstars startup weekend powered by Google was organised in collaboration with E-summit 2018. It was a 54 hour long event where participants went through a process, to generate a startup idea. They were divided into groups and were asked to work on an idea. Mentors from different industries were invited to interact with the teams and improve their ideas.",
-          img: Event_2_image
+            "Abhivyakti is an 'Advertisement Making Competition' for engineering and B-School students to showcase their creativity in Marketing products and services. Its objective is to acquaint the students about promotional strategies in marketing through advertisements. It comprises of conceptual ad presentation by the students. Students will act out on various advertisement script and ideas relevant for different sectors across various domains.",
+          img: Abhivyakti_image
         },
         {
           id: 3,
-          title: "Corporata",
+          title: "Quizza",
           about:
-            "Corporata provides the participants with a chance to build upon the financial repertoire and sharpen their business acumen. It also provides a platform to boast about their financial literacy and general economic awareness. It tests understanding of core financial knowledge against the best in the game and astound the jury with their business insights.",
-          img: Event_3_image
-        },
-        {
-          id: 4,
-          title: "Marksense ",
-          about:
-            "In three stages, from general awareness of logos of the companies to re-introducing a failed product in the market, the participants must prove that they have the potential to rule the market.",
-          img: Event_4_image
+            "Quizza is a series of quizzes conducted under Confluencia. Under Quizza we promise to bring you a new quiz every 15 to 30 days. Each quiz would be independent of the other quizzes and would have separate prizes and rewards for each quiz. The underlying theme of quizzes would be to check you based on general awareness, business knowledge, and aptitude.",
+          img: Quizza_image
         }
+        // {
+        //   id: 4,
+        //   title: "Marksense ",
+        //   about:
+        //     "In three stages, from general awareness of logos of the companies to re-introducing a failed product in the market, the participants must prove that they have the potential to rule the market.",
+        //   img: Event_4_image
+        // }
       ],
       active_index: 1
     };
@@ -63,7 +66,7 @@ class Homepage extends Component {
   prevSlide() {
     if (this.state.active_index === 1) {
       this.setState({
-        active_index: 4
+        active_index: 3
       });
     } else {
       this.setState({
@@ -72,7 +75,7 @@ class Homepage extends Component {
     }
   }
   nextSlide = () => {
-    if (this.state.active_index === 4) {
+    if (this.state.active_index === 3) {
       this.setState({
         active_index: 1
       });
