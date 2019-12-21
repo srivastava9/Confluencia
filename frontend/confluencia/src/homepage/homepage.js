@@ -25,7 +25,6 @@ import Footer from "../components/footer/footer.js";
 import Revolution_image from "./revolution_image.jpg";
 import Abhivyakti_image from "./abhivyakti_image.jpg";
 import Quizza_image from "./quizza_image.jpg";
-import Events_page from "../events_page/events_page";
 class Homepage extends Component {
   constructor(props) {
     super(props);
@@ -97,8 +96,7 @@ class Homepage extends Component {
     });
     return (
       <div>
-        <Events_page/>
-        {/* <div className="homepage_1">
+        <div className="homepage_1">
           <div className="homepage_1_grey">
             <img className="logo" src={logo} />
             <div className="homepage_1_grey_textarea">
@@ -161,7 +159,7 @@ class Homepage extends Component {
           </div>
           <div className="homepage_2_button">
             {/* <Button_homepage name="Team" /> */}
-          {/* </div>
+          </div>
         </div>
         <div className="homepage_3">
           <div className="homepage_3_title">
@@ -173,7 +171,7 @@ class Homepage extends Component {
           {activeEvent}
           <div className="nextslide" onClick={this.nextSlide}>
             <div className="nextslide_arrow"></div>
-          </div> */}
+          </div>
           {/* <div className="homepage_3_textbox">
             <div className="homepage_3_text_title">
               Bhumika - Management Hackathon
@@ -205,7 +203,7 @@ class Homepage extends Component {
             </div>
           </div>
           <img src={homepage_3_image} className="homepage_3_image" /> */}
-        {/* </div>
+        </div>
         <div className="homepage_4">
           <div className="homepage_4_title">
             <Title_homepage name="Testimonials" style={{ width: "237px" }} />
@@ -293,8 +291,8 @@ class Homepage extends Component {
           </div>
         </div>
         <div className="homepage_7">
-          <Footer /> }
-        </div> */}
+          <Footer />
+        </div>
       </div>
     );
   }
