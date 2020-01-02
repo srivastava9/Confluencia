@@ -22,9 +22,6 @@ import Event_2_image from "./event_2_image.png";
 import Title_homepage from "../components/title_homepage/title_homepage.js";
 import homepage_1_image from "./homepage_1_c.jpg";
 import Footer from "../components/footer/footer.js";
-import Revolution_image from "./revolution_image.jpg";
-import Abhivyakti_image from "./abhivyakti_image.jpg";
-import Quizza_image from "./quizza_image.jpg";
 class Homepage extends Component {
   constructor(props) {
     super(props);
