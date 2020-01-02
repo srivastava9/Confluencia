@@ -26,9 +26,7 @@ export default function Events(props) {
           />
         </div> */}
       </div>
-      <div className="image_setting">
-        <img src={props.eventImg} className="homepage_3_image" />
-      </div>
+      <img src={props.eventImg} className="homepage_3_image" />
     </div>
   );
 }

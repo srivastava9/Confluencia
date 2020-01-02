@@ -29,8 +29,8 @@
 }
 .homepage_3_textbox {
   position: absolute;
-  width: 1060px;
-  height: 600px;
+  width: 860px;
+  height: 590px;
   left: 200px;
   top: 2030px;
 
@@ -79,25 +79,16 @@
 }
 .homepage_3_button2 {
   position: absolute;
-  left: 500px;
+  left: 350px;
   top: 449px;
   border: 1px solid #525252;
   box-sizing: border-box;
 }
 .homepage_3_image {
-  position: relative;
-  width: 600px;
-  height: 440px;
-  left: -30px;
-  top: 0;
-  mix-blend-mode: normal;
-}
-.image_setting {
-  
-  overflow:hidden;
   position: absolute;
-  left: 1100px;
+  width: 410px;
+  height: 412px;
+  left: 950px;
   top: 2128px;
-  width: 550px;
-  height: 480px;
+  mix-blend-mode: normal;
 }
