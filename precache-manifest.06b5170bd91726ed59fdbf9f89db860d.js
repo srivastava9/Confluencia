@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "84af7bf14abf44f4de5005d406b651c9",
+    "revision": "21927a253461265ca75c1a63e8d7cc5d",
     "url": "/index.html"
   },
   {
-    "revision": "410795e4eaee2a5604ca",
-    "url": "/static/css/main.1c4d717c.chunk.css"
+    "revision": "2f0fc40fc2fa4bb0d65f",
+    "url": "/static/css/main.ed066852.chunk.css"
   },
   {
-    "revision": "99fcc663c3d688bf62e8",
-    "url": "/static/js/2.86e94cec.chunk.js"
+    "revision": "ea76cb10a903ac44f308",
+    "url": "/static/js/2.7dd5d3f5.chunk.js"
   },
   {
-    "revision": "410795e4eaee2a5604ca",
-    "url": "/static/js/main.8344f3e3.chunk.js"
+    "revision": "2f0fc40fc2fa4bb0d65f",
+    "url": "/static/js/main.01532b20.chunk.js"
   },
   {
     "revision": "6c9873f070369031feb3",
@@ -32,20 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/at.798767c5.png"
   },
   {
-    "revision": "c33b1f1e61444814e05acae6fce9cc16",
-    "url": "/static/media/event_1_image.c33b1f1e.jpeg"
+    "revision": "542a86507572faad8570a1eeae6de271",
+    "url": "/static/media/event_1_image.542a8650.jpg"
   },
   {
-    "revision": "57dfcea8328007ef884d3e561e8a6616",
-    "url": "/static/media/event_2_image.57dfcea8.png"
+    "revision": "0952048f7ea83e3e211445aaf6ca1e4b",
+    "url": "/static/media/event_2_image.0952048f.jpg"
   },
   {
-    "revision": "8280a4e7a15e79160c2c796c014b6461",
-    "url": "/static/media/event_3_image.8280a4e7.png"
-  },
-  {
-    "revision": "9d65940f939cf2a5afe3b7623ec3be36",
-    "url": "/static/media/event_4_image.9d65940f.png"
+    "revision": "232f524a3848cd2ac76baa347212e75c",
+    "url": "/static/media/event_3_image.232f524a.jpg"
   },
   {
     "revision": "bc1273f6c133f24331ce8bb20c949e9e",
@@ -82,5 +78,21 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fd39a11681d8fd2ee45090db98d27300",
     "url": "/static/media/logo.fd39a116.png"
+  },
+  {
+    "revision": "a9e468d1e162349d45bae73f295907eb",
+    "url": "/static/media/professor1.a9e468d1.png"
+  },
+  {
+    "revision": "3b5a77fca7daf75a6a765abfa73d8343",
+    "url": "/static/media/professor2.3b5a77fc.png"
+  },
+  {
+    "revision": "7501f8c71ce6d38a9c579d561824494e",
+    "url": "/static/media/professor3.7501f8c7.png"
+  },
+  {
+    "revision": "93b744c20f90259b616dcd4fce1f4c0a",
+    "url": "/static/media/professor4.93b744c2.png"
   }
 ]);
