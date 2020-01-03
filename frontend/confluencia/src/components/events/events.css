@@ -27,15 +27,14 @@
   left: 200px;
   top: 1910px;
 }
-.homepage_3_textbox {
+/* .homepage_3_textbox {
   position: absolute;
   width: 860px;
   height: 590px;
   left: 200px;
-  top: 2030px;
 
   background: #eeeeee;
-}
+} */
 .homepage_3_text_title {
   position: absolute;
   width: 505px;
@@ -62,7 +61,7 @@
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 170%;
   /* or 41px */
 
@@ -89,6 +88,6 @@
   width: 410px;
   height: 412px;
   left: 950px;
-  top: 2128px;
+  top: 1800px;
   mix-blend-mode: normal;
 }

@@ -6,6 +6,10 @@ import "./homepage.css";
 import hod from "./hod.png";
 import mukeshJain from "./Mukesh_Jain.png";
 import atulT from "./at.png";
+import Professor1 from "./professor1.png";
+import Professor2 from "./professor2.png";
+import Professor3 from "./professor3.png";
+import Professor4 from "./professor4.png";
 import spons_1 from "./sponsors/image_1.png";
 import spons_2 from "./sponsors/image_2.png";
 import spons_3 from "./sponsors/image_3.png";
@@ -13,12 +17,11 @@ import spons_4 from "./sponsors/image_4.png";
 import spons_5 from "./sponsors/image_5.png";
 import spons_6 from "./sponsors/image_6.png";
 import semiColon from "./Vector.png";
-import Event_1_image from "./event_1_image.jpeg";
-import Event_4_image from "./event_4_image.png";
+import Event_1_image from "./event_1_image.jpg";
 import Events from "../components/events/events.js";
 import Button_homepage from "../components/button/button_1.js";
-import Event_3_image from "./event_3_image.png";
-import Event_2_image from "./event_2_image.png";
+import Event_3_image from "./event_3_image.jpg";
+import Event_2_image from "./event_2_image.jpg";
 import Title_homepage from "../components/title_homepage/title_homepage.js";
 import homepage_1_image from "./homepage_1_c.jpg";
 import Footer from "../components/footer/footer.js";
@@ -29,31 +32,24 @@ class Homepage extends Component {
       eventsData: [
         {
           id: 1,
-          title: "Bhumika - Management Hackathon",
+          title: "Revolution",
           about:
-            "BHUMIKA provides participants with an opportunity to test various skills required while working for an organization in the corporate world.It will be an occasion where one can innovate, build a team, take decisions and numerous other things.",
+            "Revolution, a case study competition strives to elicit critical thinking against perplexity or a dilemma posed to check the depth of the intellect prevalent among the participants. Sustainable development and strategy alignment is the need of the hour and a rational and 360-degree analysis of a situation before taking sides is a 'must-have' quality for a manager. Therefore, if you have reasoning and rationality is your weapon to succeed, Revolution is a perfect stage to showcase your distinct trait",
           img: Event_1_image
         },
         {
           id: 2,
-          title: "Google Startup Weekend",
+          title: "Abhivyakti",
           about:
-            "The event Techstars startup weekend powered by Google was organised in collaboration with E-summit 2018. It was a 54 hour long event where participants went through a process, to generate a startup idea. They were divided into groups and were asked to work on an idea. Mentors from different industries were invited to interact with the teams and improve their ideas.",
+            "Abhivyakti is an 'Advertisement Making Competition' for engineering and B-School students to showcase their creativity in Marketing products and services. Its objective is to acquaint the students about promotional strategies in marketing through advertisements. It comprises of conceptual ad presentation by the students. Students will act out on various advertisement script and ideas relevant for different sectors across various domains. All the teams will be given a time frame to showcase their talent",
           img: Event_2_image
         },
         {
           id: 3,
-          title: "Corporata",
+          title: "QUIZZA",
           about:
-            "Corporata provides the participants with a chance to build upon the financial repertoire and sharpen their business acumen. It also provides a platform to boast about their financial literacy and general economic awareness. It tests understanding of core financial knowledge against the best in the game and astound the jury with their business insights.",
+            "Quizza is a series of quizzes conducted under Confluencia. Under Quizza we promise to bring you a new quiz every 15 to 30 days. Each quiz would be independent of the other quizzes and would have separate prizes and rewards for each quiz. The underlying theme of quizzes would be to check you based on general awareness, business knowledge, and aptitude.",
           img: Event_3_image
-        },
-        {
-          id: 4,
-          title: "Marksense ",
-          about:
-            "In three stages, from general awareness of logos of the companies to re-introducing a failed product in the market, the participants must prove that they have the potential to rule the market.",
-          img: Event_4_image
         }
       ],
       active_index: 1
@@ -63,7 +59,7 @@ class Homepage extends Component {
   prevSlide() {
     if (this.state.active_index === 1) {
       this.setState({
-        active_index: 4
+        active_index: 3
       });
     } else {
       this.setState({
@@ -72,7 +68,7 @@ class Homepage extends Component {
     }
   }
   nextSlide = () => {
-    if (this.state.active_index === 4) {
+    if (this.state.active_index === 3) {
       this.setState({
         active_index: 1
       });
@@ -104,10 +100,12 @@ class Homepage extends Component {
                 14th - 16th February 2020
               </div>
               <div className="homepage_1_grey_text">
-                CONFLUENCIA is the flagship event of Department of Management
-                Studies, IIT Roorkee. Initiated in 2008, it served as a
-                knowledge sharing platform for head of various organizations to
-                impart their insights to the budding managers of the country.{" "}
+                CONFLUENCIA is the flagship event of Department of
+                <br /> Management Studies, IIT Roorkee. Initiated in 2008, it
+                <br />
+                served as a knowledge sharing platform for head of <br />
+                various organizations to impart their insights to the <br />
+                budding managers of the country.{" "}
               </div>
               <img src={homepage_1_image} className="homepage_1_image" />
             </div>
@@ -234,23 +232,26 @@ class Homepage extends Component {
         </div>
         <div className="homepage_5">
           <div className="homepage_5_title">
-            <Title_homepage name="Words From HOD" style={{ width: "342px" }} />
+            <Title_homepage
+              name="Words From HOD & Faculty"
+              style={{ width: "523.8px" }}
+            />
           </div>
           <div className="homepage_5_text">
             Conceptualised in 2008, over the years CONFLUENCIA has transformed
             into a National level platform to bring together the ideas and
             opinions of eminent speakers from government, academia and industry
             alike in an attempt to understand and provide viable solutions to
-            the current challenges faced by the society at large. I commend the
-            enthusiastic support from the sponsors and the student volunteers
-            for putting innumerable hours in organising and managing the grand
-            event over the years. I wish the 13th edition of CONFLUENCIA to
-            further build upon the success of its predecessors and become a
-            nationally reputed event to provide the leaders of tomorrow a right
-            direction towards a sustainable future. I look forward to this
-            aspiring and multifaceted event and wish it a grand success. So, let
-            us collaborate to confluence our goals and purpose in order to
-            create a better tomorrow.
+            the current challenges faced by the society at large. <br />
+            <br />I commend the enthusiastic support from the sponsors and the
+            student volunteers for putting innumerable hours in organising and
+            managing the grand event over the years. I wish the 13th edition of
+            CONFLUENCIA to further build upon the success of its predecessors
+            and become a nationally reputed event to provide the leaders of
+            tomorrow a right direction towards a sustainable future. I look
+            forward to this aspiring and multifaceted event and wish it a grand
+            success. So, let us collaborate to confluence our goals and purpose
+            in order to create a better tomorrow.
           </div>
           <img className="homepage_5_image" src={hod} />
           <div className="hod_details">
@@ -259,6 +260,47 @@ class Homepage extends Component {
             Head of Department <br />
             Department of Management Studies, <br />
             IIT Roorkee
+          </div>
+          <div className="faculty-coordinators">
+            <div className="faculty1">
+              <img className="faculty-photo" src={Professor1} />
+              <div className="faculty-about">
+                Faculty Coordinator
+                <br />{" "}
+                <span style={{ fontWeight: 800 }}>Jogendra Kumar Nayak</span>
+                <br /> Associate Professor
+                <br /> Email : jogknfdm@iitr.ac.in
+              </div>
+            </div>
+            <div className="faculty2">
+              <img className="faculty-photo" src={Professor2} />
+              <div className="faculty-about">
+                Faculty Advisor
+                <br />{" "}
+                <span style={{ fontWeight: 800 }}> Santosh Rangnekar</span>{" "}
+                <br />
+                Professor
+                <br /> Email : snrgnfdm@iitr.ac.in
+              </div>
+            </div>
+            <div className="faculty1">
+              <img className="faculty-photo" src={Professor3} />
+              <div className="faculty-about">
+                <span style={{ fontWeight: 800 }}>Vijay Sharma </span>
+                <br />
+                Professor
+                <br /> Email : vinayfdm@iitr.ac.in
+              </div>
+            </div>
+            <div className="faculty1">
+              <img className="faculty-photo" src={Professor4} />
+              <div className="faculty-about">
+                <span style={{ fontWeight: 800 }}> Rajat Agrawal </span>
+                <br />
+                Professor
+                <br /> Email : rajatfdm@iitr.ac.in
+              </div>
+            </div>
           </div>
         </div>
         <div className="homepage_6">
