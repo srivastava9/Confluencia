@@ -32,6 +32,7 @@
 .homepage_3_greybox {
   position: relative;
   width: 50%;
+  height:700px;
   /* height: 590px; */
   margin: -114px 200px;
   background: #eeeeee;
@@ -77,7 +78,7 @@
 .homepage_3_image {
   position: absolute;
   width: 35vw;
-  margin-top: -600px ;
+  margin-top: -500px ;
   margin-left: 55%;
   mix-blend-mode: normal;
 }

@@ -44,12 +44,15 @@ function Footer(props) {
       <div>
         <div className="heading">Social</div>
         <div>
-          Facebook
+          <a className="link" href="https://www.facebook.com/ConfluenciaOfficial/">
+            Facebook</a>
           <br />
-          Linkedin
+          <a href=""></a>Linkedin
           <br />
           Twitter
           <br />
+          <a className="link" href="https://www.instagram.com/confluencia_iitr/">
+            Instagram</a>
         </div>
       </div>
       <div className="column_5">
