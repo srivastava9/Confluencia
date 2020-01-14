@@ -96,6 +96,7 @@ class Homepage extends Component {
               <div className="homepage_1_grey_title">
                 The Annual Business Summit - IIT Roorkee
               </div>
+
               <div className="homepage_1_grey_date">
                 14th - 16th February 2020
               </div>
@@ -253,13 +254,15 @@ class Homepage extends Component {
             success. So, let us collaborate to confluence our goals and purpose
             in order to create a better tomorrow.
           </div>
-          <img className="homepage_5_image" src={hod} />
-          <div className="hod_details">
-            {" "}
-            <b>Dr. M.K. Barua</b> <br />
-            Head of Department <br />
-            Department of Management Studies, <br />
-            IIT Roorkee
+          <div className="homepage_5_hodDetails">
+            <img className="homepage_5_image" src={hod} />
+            <div className="hod_details">
+              {" "}
+              <b>Dr. M.K. Barua</b> <br />
+              Head of Department <br />
+              Department of Management Studies, <br />
+              IIT Roorkee
+            </div>
           </div>
           <div className="faculty-coordinators">
             <div className="faculty1">

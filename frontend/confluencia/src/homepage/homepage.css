@@ -1,12 +1,12 @@
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 .homepage_1_grey {
-  width: 952px;
+  width: 60%;
   height: 840px;
   background: #eeeeee;
-  position: absolute;
-  top: 0px;
+  position: relative;
+  margin-top: -200px;
   left: 0px;
 }
 .logo {
@@ -21,28 +21,27 @@ a.register_a {
   text-decoration: none;
 }
 .homepage_1_grey_title {
-  position: absolute;
-  width: 614px;
+  position: relative;
+  width: 55%;
   height: 34px;
-  left: 200px;
-  top: 200px;
+  margin-left: 20%;
+  margin-top: 200px;
+  padding-top: 200px;
   font-family: Lato;
   font-style: normal;
   font-weight: 900;
   font-size: 28px;
-  line-height: 105%;
+  /* line-height: 105%; */
   /* identical to box height, or 34px */
   display: flex;
   align-items: center;
   color: #525252;
 }
 .homepage_1_grey_date {
-  position: absolute;
-  width: 283px;
-  height: 25px;
-  left: 200px;
-  top: 250px;
-
+  position: relative;
+  width: 50%;
+  margin-left: 20%;
+  margin-top: 20px;
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
@@ -56,18 +55,15 @@ a.register_a {
   color: #525252;
 }
 .homepage_1_grey_text {
-  position: absolute;
-  width: 600px;
-  height: 205px;
-  left: 200px;
-  top: 300px;
-
+  position: relative;
+  width: 60%;
+  margin-top: 40px;
+  margin-left: 20%;
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 170%;
-  /* or 41px */
 
   text-align: justify;
 
@@ -75,33 +71,27 @@ a.register_a {
 }
 .homepage_1_image {
   position: absolute;
-  width: 80%;
+  width: 90%;
 
   left: 79%;
   top: 118px;
 }
 .homepage_1_button {
-  position: absolute;
+  position: relative;
   width: 72px;
-  height: 0px;
-  left: 201px;
-  top: 530px;
+  margin-top: 60px;
+  margin-left: 20%;
 }
 .homepage_2 {
   margin-top: 200px;
 }
 .homepage_2_title {
-  position: absolute;
-  left: 200px;
-  top: 1000px;
+  position: relative;
+  margin-left: 12%;
 }
 .homepage_2_text1 {
-  position: absolute;
-  width: 1000px;
-  height: 166px;
-  left: 200px;
-  top: 1160px;
-
+  position: relative;
+  margin: 50px 12%;
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
@@ -114,11 +104,8 @@ a.register_a {
   color: #666666;
 }
 .homepage_2_text2 {
-  position: absolute;
-  width: 1000px;
-  height: 166px;
-  left: 200px;
-  top: 1350px;
+  position: relative;
+  margin: 50px 12%;
 
   font-family: Lato;
   font-style: normal;
@@ -139,38 +126,36 @@ a.register_a {
   top: 1700px;
 }
 .homepage_3_title {
-  position: absolute;
-  height: 63px;
-  left: 200px;
-  top: 1600px !important;
+  position: relative;
+  margin: 200px 12%;
 }
-.homepage_3_textbox {
-  position: absolute;
+/* .homepage_3_textbox {
+  position: relative;
+
   width: 940px;
   height: 590px;
-  left: 180px;
+  
   padding-bottom: 20px;
-  top: 1730px !important;
+  margin: 50px 12%;
   background: #eeeeee;
-}
-.homepage_3_text_title {
-  position: absolute;
+} */
+/* .homepage_3_text_title {
+  position: relative;
   width: 505px;
   height: 48px;
   left: 110px;
-  /* top: 100px; */
+
 
   font-family: Lato;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
   line-height: 150.5%;
-  /* or 48px */
 
   color: rgba(70, 70, 70, 0.8);
-}
-.homepage_3_text {
-  position: absolute;
+} */
+/* .homepage_3_text {
+  position: relative;
   width: 598px;
   height: 205px;
   left: 118px;
@@ -181,7 +166,6 @@ a.register_a {
   font-weight: normal;
   font-size: 24px;
   line-height: 170%;
-  /* or 41px */
 
   text-align: justify;
 
@@ -200,7 +184,7 @@ a.register_a {
   top: 449px;
   border: 1px solid #525252;
   box-sizing: border-box;
-}
+} */
 /* .homepage_3_image {
   position: absolute;
   width: 410px;
@@ -210,16 +194,15 @@ a.register_a {
   mix-blend-mode: normal;
 } */
 .homepage_4_title {
-  position: absolute;
-  left: 200px;
-  top: 2480px;
+  position: relative;
+  margin: 200px 12%;
 }
 .semicolon1 {
   position: absolute;
   width: 64px;
   height: 151px;
-  left: 823px;
-  top: 2600px;
+  left: 50%;
+  margin-top: -110px;
 
   /* background: rgba(204, 204, 204, 0.4); */
 }
@@ -227,23 +210,21 @@ a.register_a {
   position: absolute;
   width: 64px;
   height: 151px;
-  left: 893px;
-  top: 2600px;
+  left: 54%;
+  margin-top: -110px;
 }
 .homepage_4_text1 {
   position: absolute;
   width: 590px;
   height: 270px;
-  left: 855px;
-  top: 2670px;
-
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
   line-height: 170%;
   /* or 54px */
-
+  left: 51%;
+  margin-top: -30px;
   text-align: justify;
 
   color: #666666;
@@ -252,16 +233,16 @@ a.register_a {
   position: absolute;
   width: 80px;
   height: 80px;
-  left: 855px;
-  top: 3010px;
+  margin-top: 277px;
+  left: 51%;
   border-radius: 200px;
 }
 .homepage_4_speaker1_details {
   position: absolute;
   width: 388px;
   height: 69px;
-  left: 965px;
-  top: 3015px;
+  margin-top: 277px;
+  left: 57%;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -276,21 +257,21 @@ a.register_a {
   width: 74px;
   height: 161px;
   left: 160px;
-  top: 2910px;
+  margin-top: 120px;
 }
 .semicolon4 {
   position: absolute;
   width: 75px;
   height: 161px;
   left: 230px;
-  top: 2910px;
+  margin-top: 120px;
 }
 .homepage_4_text2 {
   position: absolute;
   width: 550px;
   height: 162px;
   left: 180px;
-  top: 3004px;
+  margin-top: 200px;
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
@@ -302,20 +283,24 @@ a.register_a {
 
   color: #666666;
 }
+.homepage_4 {
+  position:relative;
+  height: 800px;
+}
 .homepage_4_speaker2 {
   position: absolute;
   width: 80px;
   height: 80px;
   left: 180px;
-  top: 3240px;
   border-radius: 200px;
+  margin-top: 400px;
 }
 .homepage_4_speaker2_details {
   position: absolute;
   width: 419px;
   height: 68px;
   left: 280px;
-  top: 3250px;
+  margin-top: 400px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -328,50 +313,54 @@ a.register_a {
   color: #525252;
 }
 .homepage_5_title {
-  position: absolute;
+  position: relative;
   left: 200px;
-  top: 3400px;
+ 
 }
 .homepage_5_text {
-  position: absolute;
-  width: 881px;
+  position: relative;
+  width: 50vw;
   height: 533px;
   left: 200px;
-  top: 3550px;
+  margin-top:131px;
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 170%;
   /* or 41px */
-
+  
   text-align: justify;
 
   color: #666666;
 }
 .homepage_5_image {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin-left: 60px;
+}
+.homepage_5_hodDetails{
   position: absolute;
   width: 250px;
   height: 250px;
-  left: 1150px;
-  top: 3600px;
+  left: 69vw;
+  margin-top:-500px;
 }
 .hod_details {
-  position: absolute;
+  position: relative;
   width: 375px;
   height: 93px;
-  left: 1103px;
-  top: 3850px;
+  
   font-family: Lato;
   font-size: 18px;
   line-height: 170%;
   /* or 31px */
   text-align: center;
-  color: #525252;
+  /* color: #525232; */
 }
 .faculty-coordinators {
-  position: absolute;
-  top: 4050px;
+  position: relative;
   left: 200px;
   width: 83%;
   display: inline-flex;
@@ -443,17 +432,17 @@ a.register_a {
   -webkit-transform: rotate(-45deg);
 }
 .homepage_6_title {
-  position: absolute;
+  position: relative;
   left: 200px;
-  top: 4506px;
+  margin-top: 313px;
 }
 .spons_div {
-  position: absolute;
-  top: 4550px;
+  position: relative;
   left: 200px;
   display: flex;
   flex-wrap: wrap;
-  width: 1025px;
+  width: 80%;
+  margin-bottom: 200px;
   justify-content: space-around;
 }
 .spons_image {
@@ -461,7 +450,6 @@ a.register_a {
   margin-top: 60px;
 }
 .homepage_7 {
-  position: absolute;
-  top: 5000px;
-  width: 100%;
+  position: relative;
+  
 }

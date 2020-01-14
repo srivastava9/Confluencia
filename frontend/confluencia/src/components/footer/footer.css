@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   justify-content: space-around;
-  width: 1270px;
+  /* width: 1270px; */
   line-height: 40px;
   background-color: #ebebeb;
   padding: 100px;
