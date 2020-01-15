@@ -1,0 +1,81 @@
+.registration-form {
+  width: 500px;
+}
+.registration-steps {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  font-family: Lato;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 105%;
+  align-items: center;
+  color: #373737;
+}
+.step-internal {
+  border: 4px solid #c4c4c4;
+  width: 102px;
+  height: 0px;
+}
+.registration-account-setup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5%;
+  align-items: center;
+}
+.registration-account-setup-title {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 105%;
+  /* or 15px */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #373737;
+}
+.registartion-account-setup-subtitle {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 105%;
+  /* identical to box height, or 13px */
+
+  /* display: flex;
+    align-items: center; */
+  margin-top: 2%;
+  color: rgba(55, 55, 55, 0.6);
+}
+.step1-fields {
+  width: 70%;
+  height: 40px;
+  border: 1px solid #ffc457;
+  margin-top: 8%;
+}
+input {
+  width: 93%;
+  height: 92%;
+  
+  align-items: center;
+  border: 0;
+  display: flex;
+  padding-left: 7%;
+  justify-content: center;
+}
+.error_message {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: red;
+  margin-left:3%;
+  margin-top:2%;
+}
