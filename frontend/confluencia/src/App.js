@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "./logo.svg";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 import Button_homepage from "./components/button/button_1.js";
@@ -10,10 +10,10 @@ import Registration from "./components/registration";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <Switch>
         <Route exact path="/" component={Homepage} />
         <Route path="/register" component={Registration} />
-      </div>
+      </Switch>
     </BrowserRouter>
   );
 }
