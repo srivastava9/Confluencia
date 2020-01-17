@@ -9,13 +9,15 @@ import Homepage from "./homepage/homepage.js";
 import Registration from "./components/registration";
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
-        <Route exact path="/" component={Homepage} />
-        <Route path="/register" component={Registration} />
-        <Redirect to="/" />
-      </Switch>
-    </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Homepage} />
+          <Route path="/register" component={Registration} />
+          <Redirect to="/" />
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
 }
 
