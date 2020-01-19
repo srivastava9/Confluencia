@@ -31,8 +31,8 @@
 }
 .homepage_3_greybox {
   position: relative;
-  width: 50%;
-  height:700px;
+  width: 63%;
+  height: 700px;
   /* height: 590px; */
   margin: -114px 200px;
   background: #eeeeee;
@@ -51,9 +51,9 @@
   color: rgba(70, 70, 70, 0.8);
 }
 .homepage_3_text {
-  margin-top: 40px;
+  margin-top: 15px;
   position: relative;
-  width: 75%;
+  width: 60%;
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
@@ -77,8 +77,8 @@
 }
 .homepage_3_image {
   position: absolute;
-  width: 35vw;
-  margin-top: -500px ;
+  height: 40%;
+  margin-top: -350px;
   margin-left: 55%;
   mix-blend-mode: normal;
 }

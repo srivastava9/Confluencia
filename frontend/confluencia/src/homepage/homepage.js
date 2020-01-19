@@ -292,7 +292,9 @@ class Homepage extends Component {
             <div className="faculty1">
               <img className="faculty-photo" src={Professor3} />
               <div className="faculty-about">
-                <span style={{ fontWeight: 800 }}>Vijay Sharma </span>
+                Faculty Advisor
+                <br />
+                <span style={{ fontWeight: 800 }}>Vinay Sharma </span>
                 <br />
                 Professor
                 <br /> Email : vinayfdm@iitr.ac.in
@@ -301,7 +303,9 @@ class Homepage extends Component {
             <div className="faculty1">
               <img className="faculty-photo" src={Professor4} />
               <div className="faculty-about">
-                <span style={{ fontWeight: 800 }}> Rajat Agrawal </span>
+                {" "}
+                Faculty Advisor
+                <br /> <span style={{ fontWeight: 800 }}> Rajat Agrawal </span>
                 <br />
                 Professor
                 <br /> Email : rajatfdm@iitr.ac.in
