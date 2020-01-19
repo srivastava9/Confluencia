@@ -1,0 +1,134 @@
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .homepage_1 {
+    width: 100%;
+  }
+  .homepage_1_image {
+      left:5% !important;
+      width:100%;
+        object-fit: cover;
+   
+  }
+  .homepage_1_grey{
+    width:100% !important;
+    height: 100% !important;
+    padding-bottom: 10%;
+  }
+  .homepage_1_grey_title{
+     padding-top:400px !important;
+     width:80% !important;
+     margin-left:10% !important;
+  }
+  .homepage_1_grey_date{
+      width:70% !important;
+      margin-left:10% !important;
+  }
+  .homepage_1_grey_text{
+      width:80% !important;
+      margin-left:10% !important;
+  }
+  .homepage_2{
+      margin-top:20% !important;
+  }
+  .homepage_3_title{
+      margin-top:20% !important;
+      margin-bottom: 10% !important;
+  }
+  .homepage_3_text_title{
+      margin-bottom: 10%;
+  }
+  .homepage_3_greybox{
+      margin:0px !important;
+      width:100% !important;
+      height: 700px !important;
+      padding-bottom: 10%;
+  }
+  .homepage_3_textbox{
+      padding-left: 0% !important;
+      width:90%;
+      padding-top:0% !important;
+
+  }
+  .homepage_3_text{
+      top:50% !important;
+      width: 100% !important;
+      background:#eeeeee;
+      padding-right: 12%;
+  }
+  .homepage_3_image{
+      width:90%;
+    margin-left:0% !important;
+      margin-top:-165% !important;
+      
+  }
+  .prevslide{
+    display: none !important;
+  }
+  .nextslide{
+    left:70% !important;
+    top:422% !important;
+
+  }
+  .homepage_4{
+      display:none;
+  }
+  .homepage_5{
+      margin-top:90% !important;
+  }
+  .homepage_5_title{
+      left:8% !important;
+      overflow-x: hidden;
+      margin-top:-10% !important;
+  }
+  .homepage_5_text{
+      left:0 !important;
+      width:80% !important;
+    
+    margin-top:100% !important;
+  
+
+  }
+  .homepage_5_hodDetails{
+      left:10%;
+      margin-top:-170% !important;
+   
+  }
+  .homepage_5_image{
+      margin-left:-80% !important;
+      margin-top: -320% !important;
+      
+  }
+  .hod_details{
+      margin-left:-100% !important;
+       
+      margin-top:-10% !important;
+  }
+  .faculty-coordinators{
+    position: absolute !important;
+    margin-top:200%;
+    left:10% !important;
+    flex-direction: column !important;
+
+  }
+  .faculty-about{
+    margin-left:-30px !important;
+    margin-bottom:20px !important;
+  }
+  .homepage_7{
+    
+    margin-top:40%;
+  }
+  .footer{
+    flex-direction: column;
+  }
+  .homepage_6{
+    padding-top:560%;
+    margin-left: -50%;
+  }
+  .spons_div{
+    flex-direction: column;
+    margin-left:-10%;
+  }
+}

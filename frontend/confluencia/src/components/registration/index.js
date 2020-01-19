@@ -3,7 +3,11 @@ import StepOne from "./registration_components/registrationStep1";
 class Registration extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      active_step:1,
+      name:"",
+      
+    };
   }
 
   render() {

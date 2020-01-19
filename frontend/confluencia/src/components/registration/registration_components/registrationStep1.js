@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./step1.css"
+import "./step1.css";
 class StepOne extends Component {
   constructor(props) {
     super(props);
@@ -16,7 +16,23 @@ class StepOne extends Component {
       name_error_bool: false,
       phone_error_bool: false
     };
+    let data={
+      name:this.state.name,
+      phone:this.state.phone,
+      email:this.state.email
+    }
+    this.props.handleNext(data)
   }
+  handleSubmit = () => {
+    if (this.state.name_error !== '' && !this.state.name_error_bool) {
+      return this.name_validate
+    }
+    if (this.state.email_error !== '' && !this.state.email_error_bool) {
+      return this.email_validate
+    }
+    if (this.state.phone_error !== '' && !this.state.phone_error_bool) {
+      return this.phonevalidate
+    }}
   handleChange = e => {
     let change = {};
     change[e.target.name] = e.target.value;
@@ -96,7 +112,7 @@ class StepOne extends Component {
       <div class="registration-form">
         <div className="registration-steps">
           <div>
-            Step 1 <div className="step-internal"></div>
+            Step 1 <div className="step-internal-active"></div>
           </div>
           <div>
             Step 2 <div className="step-internal"></div>
@@ -211,6 +227,7 @@ class StepOne extends Component {
               required
             />
           </div>
+          <div className="step1_next" onClick={this.handleNext}>Next</div>
         </div>
       </div>
     );
