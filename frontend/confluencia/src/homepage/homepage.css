@@ -1,5 +1,10 @@
 body {
   overflow-x: hidden;
+  top:0;
+  left:0;
+  margin:0;
+}
+html,body{
 }
 .homepage_1_grey {
   width: 60%;
