@@ -5,7 +5,7 @@ import Footer from "../../components/footer/footer.js";
 import Button_homepage from "../../components/button/button_1.js";
 import Navbar from "../../components/navbar/navbar"
 
-export default function Abhivyakti(props) {
+export default function Common(props) {
   return (
     <div className="event-container">
       <Navbar/>
