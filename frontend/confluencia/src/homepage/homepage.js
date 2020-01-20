@@ -91,7 +91,9 @@ class Homepage extends Component {
     });
     return (
       <div>
+        <div class="homepage_navbar">
         <Navbar/>
+        </div>
         <div className="homepage_1">
           <div className="homepage_1_grey">
             <img className="logo" src={logo} />
