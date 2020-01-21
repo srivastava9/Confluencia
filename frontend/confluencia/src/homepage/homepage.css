@@ -1,5 +1,15 @@
 body {
   overflow-x: hidden;
+  top:0;
+  left:0;
+  margin:0;
+}
+html,body{
+}
+
+.homepage_1{
+  padding-top:80px;
+  position:relative;
 }
 .homepage_1_grey {
   width: 60%;
@@ -8,10 +18,12 @@ body {
   position: relative;
   margin-top: -200px;
   left: 0px;
+  z-index:-1;
 }
 .logo {
   position: absolute;
-  left: 10px;
+  left: 4vw;
+  padding-top:20px;
   width: 320px;
 }
 a {
@@ -73,8 +85,8 @@ a.register_a {
   position: absolute;
   width: 90%;
 
-  left: 79%;
-  top: 118px;
+  left: 73%;
+  top: 90px;
 }
 .homepage_1_button {
   position: relative;

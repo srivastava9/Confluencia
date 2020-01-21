@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/jsx-pascal-case */
 import React, { Component } from "react";
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 import logo from "./logo.png";
 import "./homepage.css";
 import hod from "./hod.png";
@@ -25,6 +26,7 @@ import Event_2_image from "./event_2_image.jpg";
 import Title_homepage from "../components/title_homepage/title_homepage.js";
 import homepage_1_image from "./homepage_1_c.jpg";
 import Footer from "../components/footer/footer.js";
+import Navbar from "../components/navbar/navbar"
 class Homepage extends Component {
   constructor(props) {
     super(props);
@@ -89,6 +91,9 @@ class Homepage extends Component {
     });
     return (
       <div>
+        <div class="homepage_navbar">
+        <Navbar/>
+        </div>
         <div className="homepage_1">
           <div className="homepage_1_grey">
             <img className="logo" src={logo} />
@@ -339,6 +344,7 @@ class Homepage extends Component {
         <div className="homepage_7">
           <Footer />
         </div>
+        
       </div>
     );
   }
