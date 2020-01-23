@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import Common from "./event_common";
+import Image from "../../assests/abhivyakti_image.png"
 
 class Abhivyakti extends Component {
   state = {};
   render() {
     return (
       <Common
+        backgroundImage={Image}
         name="Abhivyakti"
         oneliner="Advertisment making competition"
         eventinfo1="Abhivyakti is an 'Advertisement Making Competition' for engineering and B-School students to showcase 

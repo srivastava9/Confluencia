@@ -15,7 +15,9 @@
  color: #525252;
  margin-top:60px;
 }
-
+.event_navbar{
+  padding-bottom:80px;
+}
 .event-info {
   padding: 40px 10%;
 }
