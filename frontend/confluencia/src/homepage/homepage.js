@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable react/jsx-pascal-case */
 import React, { Component } from "react";
+import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 import logo from "./logo.png";
 import "./homepage.css";
 import hod from "./hod.png";
@@ -17,14 +18,17 @@ import spons_4 from "./sponsors/image_4.png";
 import spons_5 from "./sponsors/image_5.png";
 import spons_6 from "./sponsors/image_6.png";
 import semiColon from "./Vector.png";
-import Event_1_image from "./event_1_image.jpg";
+import Event_2_image from "../assests/abhivyakti_image.png";
 import Events from "../components/events/events.js";
 import Button_homepage from "../components/button/button_1.js";
-import Event_3_image from "./event_3_image.jpg";
-import Event_2_image from "./event_2_image.jpg";
+import Event_3_image from "../assests/DataWars.png";
+import Event_1_image from "../assests/revolution_image.jpg";
+import Event_4_image from "../assests/Environmentalist.png";
+import Event_5_image from "../assests/outofthebox.jpg";
 import Title_homepage from "../components/title_homepage/title_homepage.js";
 import homepage_1_image from "./homepage_1_c.jpg";
 import Footer from "../components/footer/footer.js";
+import Navbar from "../components/navbar/navbar";
 class Homepage extends Component {
   constructor(props) {
     super(props);
@@ -35,22 +39,40 @@ class Homepage extends Component {
           title: "Revolution",
           about:
             "Revolution, a case study competition strives to elicit critical thinking against perplexity or a dilemma posed to check the depth of the intellect prevalent among the participants. Sustainable development and strategy alignment is the need of the hour and a rational and 360-degree analysis of a situation before taking sides is a 'must-have' quality for a manager. Therefore, if you have reasoning and rationality is your weapon to succeed, Revolution is a perfect stage to showcase your distinct trait",
-          img: Event_1_image
+          img: Event_1_image,
+          link: "/events/Revolution"
         },
         {
           id: 2,
           title: "Abhivyakti",
           about:
             "Abhivyakti is an 'Advertisement Making Competition' for engineering and B-School students to showcase their creativity in Marketing products and services. Its objective is to acquaint the students about promotional strategies in marketing through advertisements. It comprises of conceptual ad presentation by the students. Students will act out on various advertisement script and ideas relevant for different sectors across various domains. All the teams will be given a time frame to showcase their talent",
-          img: Event_2_image
+          img: Event_2_image,
+          link: "/events/Abhivyakti"
         },
         {
           id: 3,
-          title: "QUIZZA",
+          title: "Data Wars",
           about:
             "Quizza is a series of quizzes conducted under Confluencia. Under Quizza we promise to bring you a new quiz every 15 to 30 days. Each quiz would be independent of the other quizzes and would have separate prizes and rewards for each quiz. The underlying theme of quizzes would be to check you based on general awareness, business knowledge, and aptitude.",
-          img: Event_3_image
-        }
+          img: Event_3_image,
+          link: "/events/Data-Wars"
+        },
+        {
+          id: 4,
+          title: "The Environmentalist",
+          about:
+            "The environment is where we all meet; where we all have a mutual interest; it is the one thing all of us share. The Environmentalist aims to bring out the innovative and sustainable ideas from the future leaders of the world in order to solve present day environment issues plaguing the world.",
+          img: Event_4_image,
+          link: "/events/Environmentalist"
+        },
+        {
+          id: 5,
+          title: "Thinking Big",
+          about:
+            "Quizza is a series of quizzes conducted under Confluencia. Under Quizza we promise to bring you a new quiz every 15 to 30 days. Each quiz would be independent of the other quizzes and would have separate prizes and rewards for each quiz. The underlying theme of quizzes would be to check you based on general awareness, business knowledge, and aptitude.",
+          img: Event_5_image
+        },
       ],
       active_index: 1
     };
@@ -59,7 +81,7 @@ class Homepage extends Component {
   prevSlide() {
     if (this.state.active_index === 1) {
       this.setState({
-        active_index: 3
+        active_index: 5
       });
     } else {
       this.setState({
@@ -68,7 +90,7 @@ class Homepage extends Component {
     }
   }
   nextSlide = () => {
-    if (this.state.active_index === 3) {
+    if (this.state.active_index === 5) {
       this.setState({
         active_index: 1
       });
@@ -89,9 +111,11 @@ class Homepage extends Component {
     });
     return (
       <div>
+        <div class="homepage_navbar">
+          <Navbar />
+        </div>
         <div className="homepage_1">
           <div className="homepage_1_grey">
-            <img className="logo" src={logo} />
             <div className="homepage_1_grey_textarea">
               <div className="homepage_1_grey_title">
                 The Annual Business Summit - IIT Roorkee
@@ -108,8 +132,8 @@ class Homepage extends Component {
                 various organizations to impart their insights to the <br />
                 budding managers of the country.{" "}
               </div>
-              <img src={homepage_1_image} className="homepage_1_image" />
             </div>
+            <img src={homepage_1_image} className="homepage_1_image" />
             <div className="homepage_1_button">
               <a
                 class="register_a"
@@ -168,6 +192,8 @@ class Homepage extends Component {
           <div className="nextslide" onClick={this.nextSlide}>
             <div className="nextslide_arrow"></div>
           </div>
+           
+        
           {/* <div className="homepage_3_textbox">
             <div className="homepage_3_text_title">
               Bhumika - Management Hackathon
@@ -178,12 +204,8 @@ class Homepage extends Component {
               world.
               <br /> It will be an occasion where one can innovate, build a
               team, take decisions and numerous other things.
-            </div>
-            <div className="homepage_3_button">
-              {" "}
-              <Button_homepage name="About" />
-            </div>
-            <div className="homepage_3_button2">
+            </div>*/}
+            {/*<div className="homepage_3_button2">
               <Button_homepage
                 name="All Events"
                 style={{

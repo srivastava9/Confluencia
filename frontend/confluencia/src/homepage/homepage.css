@@ -1,5 +1,15 @@
 body {
   overflow-x: hidden;
+  top:0;
+  left:0;
+  margin:0; 
+}
+html,body{
+}
+
+.homepage_1{
+  padding-top:80px;
+  position:relative;
 }
 .homepage_1_grey {
   width: 60%;
@@ -8,10 +18,12 @@ body {
   position: relative;
   margin-top: -200px;
   left: 0px;
+  z-index:-1;
 }
 .logo {
   position: absolute;
-  left: 10px;
+  left: 4vw;
+  padding-top:20px;
   width: 320px;
 }
 a {
@@ -24,7 +36,7 @@ a.register_a {
   position: relative;
   width: 55%;
   height: 34px;
-  margin-left: 20%;
+  margin-left: 12%;
   margin-top: 200px;
   padding-top: 200px;
   font-family: Lato;
@@ -40,7 +52,7 @@ a.register_a {
 .homepage_1_grey_date {
   position: relative;
   width: 50%;
-  margin-left: 20%;
+  margin-left: 12%;
   margin-top: 20px;
   font-family: Lato;
   font-style: normal;
@@ -58,7 +70,7 @@ a.register_a {
   position: relative;
   width: 60%;
   margin-top: 40px;
-  margin-left: 20%;
+  margin-left: 12%;
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
@@ -73,14 +85,14 @@ a.register_a {
   position: absolute;
   width: 90%;
 
-  left: 79%;
-  top: 118px;
+  left: 73%;
+  top: 90px;
 }
 .homepage_1_button {
   position: relative;
   width: 72px;
   margin-top: 60px;
-  margin-left: 20%;
+  margin-left: 12%;
 }
 .homepage_2 {
   margin-top: 300px;
@@ -170,14 +182,15 @@ a.register_a {
   text-align: justify;
 
   color: #666666;
-}
+}*/
 .homepage_3_button {
-  position: absolute;
+  position: relative;
   width: 165px;
   height: 60px;
-  left: 120px;
-  top: 450px;
+  /* margin-top:-10px; */
+
 }
+/*
 .homepage_3_button2 {
   position: absolute;
   left: 350px;

@@ -1,0 +1,137 @@
+.event-background {
+  width: 100%;
+  height: 40vh;
+  background-image: url("../../assests/abhivyakti_image.png") ;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: left;
+  z-index:-1;
+}
+.event-title{
+ font-size: 50px;
+ font-family: Lato;
+ font-weight: bold;
+ line-height: 105%;
+ color: #525252;
+ margin-top:60px;
+}
+.event_navbar{
+  padding-bottom:80px;
+}
+.event-info {
+  padding: 40px 10%;
+}
+.event-heading {
+  font-family: Lato;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 105%;
+  color: #525252;
+  margin-top:60px;
+}
+.event-when-where {
+  display: flex;
+  margin-top: 63px;
+}
+.event-when {
+  display: flex;
+  align-items: center;
+}
+.event-when-box {
+  width: 60px;
+  height: 60px;
+  background-color: #ffb326;
+  border-radius: 4px;
+}
+.event-when-info {
+  padding-left: 40px;
+  line-height: 150%;
+  font-family: Lato;
+  font-size: 20px;
+  color: #666;
+}
+span {
+  color: #9c9c9c;
+}
+.eventlocation {
+  color: black;
+}
+.event-where {
+  margin-left: 20%;
+  display: flex;
+  font-family: Lato;
+}
+.event-about {
+  font-family: Lato;
+  font-size: 24px;
+  line-height: 116.5%;
+  padding: 60px 0px;
+  text-align: justify;
+  color: #666;
+  letter-spacing: 0.10rem;
+}
+.event-speaker {
+  display: flex;
+  align-items: center;
+}
+.event-speaker-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #999;
+}
+.event-speaker-info {
+  display: flex;
+  flex-direction: column;
+  margin-left:30px;
+  line-height: 180%;
+}
+.speaker {
+  color: #ffb326;
+  font-size:16px;
+}
+.speaker-name{
+  color:#525252;
+  font-size: 24px;
+}
+.speaker-designation{
+  color:#666;
+  font-size:16px; 
+}
+.event-allrounds{
+  display:flex;
+  justify-content:space-evenly;
+  align-items: flex-start;
+  padding-top:60px;
+}
+.event-round{
+  width:20vw;
+  text-align: justify;
+
+}
+.event-round-heading{
+  font-family: Lato;
+ font-weight: bold;
+ line-height: 105%;
+ font-size: 30px;
+ color: #525252;
+ text-align:center;
+ margin-bottom:20px;
+}
+.event-round-tagline{
+  font-family: Lato;
+  line-height: 105%;
+  font-size: 30px;
+  color: #ffb326;
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.event-round-info{
+  font-family: Lato;
+ line-height: 105%;
+ font-size: 24px;
+ color: #525252;
+ text-align:justify;
+ margin-bottom:20px;
+}
