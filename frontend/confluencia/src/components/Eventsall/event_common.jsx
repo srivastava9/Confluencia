@@ -6,6 +6,7 @@ import Button_homepage from "../../components/button/button_1.js";
 import Navbar from "../../components/navbar/navbar";
 
 export default function Common(props) {
+  
   return (
     <div className="event-container">
       <div className="event_navbar">

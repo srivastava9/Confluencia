@@ -18,7 +18,7 @@ html,body{
   position: relative;
   margin-top: -200px;
   left: 0px;
-  z-index:-1;
+
 }
 .logo {
   position: absolute;

@@ -72,7 +72,7 @@ class Homepage extends Component {
           about:
             "Quizza is a series of quizzes conducted under Confluencia. Under Quizza we promise to bring you a new quiz every 15 to 30 days. Each quiz would be independent of the other quizzes and would have separate prizes and rewards for each quiz. The underlying theme of quizzes would be to check you based on general awareness, business knowledge, and aptitude.",
           img: Event_5_image
-        },
+        }
       ],
       active_index: 1
     };
@@ -105,15 +105,18 @@ class Homepage extends Component {
     const activeEvent = this.state.eventsData.map(i => {
       if (i.id === this.state.active_index) {
         return (
-          <Events eventAbout={i.about} eventTitle={i.title} eventImg={i.img} />
+          <Events
+            eventAbout={i.about}
+            eventTitle={i.title}
+            eventImg={i.img}
+            eventUrl={i.link}
+          />
         );
       }
     });
     return (
       <div>
-        <div class="homepage_navbar">
-          <Navbar />
-        </div>
+        <div class="homepage_navbar">{/* <Navbar /> */}</div>
         <div className="homepage_1">
           <div className="homepage_1_grey">
             <div className="homepage_1_grey_textarea">
@@ -135,14 +138,7 @@ class Homepage extends Component {
             </div>
             <img src={homepage_1_image} className="homepage_1_image" />
             <div className="homepage_1_button">
-              <a
-                class="register_a"
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSf_eXlUKwGmKc0736n-AdpmSlGMiYn4fV-tNwSvcdM4psK1aA/viewform"
-              >
-                <Button_homepage name="Register" />
-              </a>
+              <Button_homepage name="Register" link="/register" />
             </div>
           </div>
         </div>
@@ -192,8 +188,7 @@ class Homepage extends Component {
           <div className="nextslide" onClick={this.nextSlide}>
             <div className="nextslide_arrow"></div>
           </div>
-           
-        
+
           {/* <div className="homepage_3_textbox">
             <div className="homepage_3_text_title">
               Bhumika - Management Hackathon
@@ -205,7 +200,7 @@ class Homepage extends Component {
               <br /> It will be an occasion where one can innovate, build a
               team, take decisions and numerous other things.
             </div>*/}
-            {/*<div className="homepage_3_button2">
+          {/*<div className="homepage_3_button2">
               <Button_homepage
                 name="All Events"
                 style={{

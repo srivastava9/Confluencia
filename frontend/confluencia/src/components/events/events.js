@@ -29,12 +29,8 @@ export default function Events(props) {
             />
           </div> */}
           <div className="homepage_3_button">
-          <Link
-                class="register_a"
-                rel="noopener noreferrer"
-                to={props.eventLink}
-              >
-            <Button_homepage name="Know more" /></Link>
+         
+            <Button_homepage name="Know more" link={props.eventUrl}/>
           </div>
         </div>
       </div>
