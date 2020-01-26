@@ -12,10 +12,12 @@ class StepOne extends Component {
       phone_error: "",
       name_error: "",
       email_error: "",
+      pass_error_bool: false,
+      pass_error_msg: "",
       email_error_bool: false,
       name_error_bool: false,
       phone_error_bool: false,
-      category: "noniitr",
+      category: "NR",
       confirmpass_error_bool: false,
       confirmpass_error: "",
       global_error: ""
@@ -85,6 +87,21 @@ class StepOne extends Component {
       }.bind(this),
       1000
     );
+  };
+  passwordValidate = () => {
+    setTimeout(() => {
+      if (this.state.password.length < 8) {
+        this.setState({
+          pass_error_bool: true,
+          pass_error_msg: "Password Should be of Minumum Length 8"
+        });
+      } else {
+        this.setState({
+          pass_error_bool: false,
+          pass_error_msg: ""
+        });
+      }
+    }, 1000);
   };
   confirmpassvalidate = () => {
     setTimeout(
@@ -161,7 +178,9 @@ class StepOne extends Component {
       email_error,
       email_error_bool,
       confirmpass_error,
-      confirmpass_error_bool
+      confirmpass_error_bool,
+      pass_error_bool,
+      pass_error_msg
     } = this.state;
     return (
       <div className="body">
@@ -267,7 +286,13 @@ class StepOne extends Component {
                 }}
                 required
               />
+              <span className="personaldetails_input_error">
+                {pass_error_bool ? (
+                  <div className="error_message">{pass_error_msg}</div>
+                ) : null}
+              </span>
             </div>
+
             <div className="step1-fields">
               <input
                 placeholder="Confirm Password"
@@ -295,10 +320,10 @@ class StepOne extends Component {
                 value={this.state.Type}
                 className="select-css"
               >
-                <option value="noniitr">Non IIT Roorkee Student</option>
-                <option value="iitr">IIT Roorkee Student</option>
+                <option value="NR">Non IIT Roorkee Student</option>
+                <option value="IR">IIT Roorkee Student</option>
 
-                <option value="prof">Professor</option>
+                <option value="PF">Professor</option>
               </select>
             </div>
             <div className="step1_next" onClick={this.handleSubmit}>

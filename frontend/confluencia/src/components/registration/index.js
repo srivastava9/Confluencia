@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import StepOne from "./registration_components/registrationStep1";
 import StepTwo from "./registration_components/registrationstep2";
+import CallAPi from "../../api/fetchapi";
+const callApi = new CallAPi();
 class Registration extends Component {
   constructor(props) {
     super(props);
@@ -16,8 +18,9 @@ class Registration extends Component {
       year: "",
       city: "",
       gender: "male",
-      invidecode: ""
+      invitecode: ""
     };
+    this.handleNextAgain = this.handleNextAgain.bind(this);
   }
 
   handleBack = () => {
@@ -35,17 +38,57 @@ class Registration extends Component {
       active_step: this.state.active_step + 1
     });
   };
-  handleNextAgain = data => {
-    this.setState({
-      college: data.college,
-      program: data.program,
-      year: data.year,
-      city: data.city,
-      gender: data.gender,
-      invidecode: data.invidecode,
-      active_step: this.state.active_step + 1
-    });
+  submitUser = () => {
+    let {
+      name,
+      phone,
+      email,
+      password,
+      college,
+      category,
+      program,
+      year,
+      city,
+      gender,
+      invitecode
+    } = this.state;
+    let form_data = new FormData();
+    form_data.append("name", name);
+    form_data.append("phone", phone);
+    form_data.append("email", email);
+    form_data.append("college", college);
+    form_data.append("password", password);
+    form_data.append("college", college);
+    form_data.append("category", category);
+    form_data.append("year", year);
+    form_data.append("city", city);
+    form_data.append("gender", gender);
+    form_data.append("invitecode", invitecode);
+
+    callApi.createProfile(form_data)
+      .then(() => {
+        console.log("Success");
+        this.setState({
+          active_step: this.state.active_step + 1
+        });
+      })
+      .catch(err => {
+        console.log(err);
+      });
   };
+  async handleNextAgain(data) {
+    if (data) {
+      await this.setState({
+        college: data.college,
+        program: data.program,
+        year: data.year,
+        city: data.city,
+        gender: data.gender,
+        invitecode: data.invitecode
+      });
+    }
+    this.submitUser();
+  }
 
   render() {
     const {

@@ -8,7 +8,7 @@ class StepTwo extends Component {
       program: "",
       year: "",
       city: "",
-      gender: "male",
+      gender: "MM",
       invitecode: "",
       error_message: ""
     };
@@ -144,10 +144,10 @@ class StepTwo extends Component {
                 value={this.state.Type}
                 className="select-css"
               >
-                <option value="male">Male</option>
-                <option value="female">Female</option>
+                <option value="MM">Male</option>
+                <option value="FM">Female</option>
 
-                <option value="others">Others</option>
+                <option value="OO">Others</option>
               </select>
             </div>
             <div className="step1-fields">
