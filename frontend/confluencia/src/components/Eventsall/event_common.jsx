@@ -3,13 +3,18 @@ import "./event_common.css";
 // import AbhivyaktiImage from "../../assests/abhivyakti.css"
 import Footer from "../../components/footer/footer.js";
 import Button_homepage from "../../components/button/button_1.js";
-import Navbar from "../../components/navbar/navbar"
+import Navbar from "../../components/navbar/navbar";
 
 export default function Common(props) {
   return (
     <div className="event-container">
-      <Navbar/>
-      <div className="event-background"></div>
+      <div className="event_navbar">
+        <Navbar />
+      </div>
+      <div
+        className="event-background"
+        style={{ backgroundImage: `url(${props.backgroundImage})` }}
+      ></div>
       <div className="event-info">
         <div className="event-title">{props.name}</div>
         <div className="event-introduction">
@@ -19,13 +24,13 @@ export default function Common(props) {
               <div className="event-when-box"></div>
               <div className="event-when-info">
                 <div className="event-when-info-date">
-                  <span>Date:</span>
-                  {props.date}
+                  <span>Date: </span>
+                  15th and 16th February
                 </div>
-                <div className="event-when-info-time">
+                {/* <div className="event-when-info-time">
                   <span>Time:</span>
                   {props.time}
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="event-where">
@@ -57,13 +62,13 @@ export default function Common(props) {
         <div className="event-rounds">
           <div className="event-heading">Rounds</div>
           <div className="event-allrounds">
-              {props.rounds.map(item => (
-                <div className="event-round" key={item.id}>
-                  <div className="event-round-heading"> {item.heading}</div>
-                  <div className="event-round-tagline">{item.tagline}</div>
-                  <div className="event-round-info">{item.info}</div>
-                </div>
-              ))}
+            {props.rounds.map(item => (
+              <div className="event-round" key={item.id}>
+                <div className="event-round-heading"> {item.heading}</div>
+                <div className="event-round-tagline">{item.tagline}</div>
+                <div className="event-round-info">{item.info}</div>
+              </div>
+            ))}
           </div>
         </div>
         {/* <div className="event-speaker">
@@ -75,13 +80,20 @@ export default function Common(props) {
           </span>
           <div className="event-speaker-info"></div>
         </div> */}
-        <Button_homepage
-          name="Register"
-          style={{
-            backgroundColor: "#FFB326",
-            margin: "100px auto"
-          }}
-        />
+        <a
+          class="register_a"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSf_eXlUKwGmKc0736n-AdpmSlGMiYn4fV-tNwSvcdM4psK1aA/viewform"
+        >
+          <Button_homepage
+            name="Register"
+            style={{
+              backgroundColor: "#FFB326",
+              margin: "100px auto"
+            }}
+          />
+        </a>
       </div>
       <Footer />
     </div>

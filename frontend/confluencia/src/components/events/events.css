@@ -32,7 +32,7 @@
 .homepage_3_greybox {
   position: relative;
   width: 63%;
-  height: 700px;
+  height: 800px;
   /* height: 590px; */
   margin: -114px 200px;
   background: #eeeeee;
@@ -67,8 +67,8 @@
 }
 .homepage_3_button {
   position: relative;
-  left: 120px;
-  top: 450px;
+  padding-top:80px;
+  
 }
 .homepage_3_button2 {
   position: relative;
@@ -78,7 +78,7 @@
 .homepage_3_image {
   position: absolute;
   height: 40%;
-  margin-top: -350px;
+  margin-top: -450px;
   margin-left: 55%;
   mix-blend-mode: normal;
 }
