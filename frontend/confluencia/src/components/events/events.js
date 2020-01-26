@@ -1,6 +1,8 @@
 import React from "react";
 import "./events.css";
 import PropTypes from "prop-types";
+import Button_homepage from "../button/button_1";
+import {Link} from 'react-router-dom'
 export default function Events(props) {
   return (
     <div className="events">
@@ -26,6 +28,10 @@ export default function Events(props) {
             }}
             />
           </div> */}
+          <div className="homepage_3_button">
+         
+            <Button_homepage name="Know more" link={props.eventUrl}/>
+          </div>
         </div>
       </div>
       <img src={props.eventImg} className="homepage_3_image" />
@@ -35,5 +41,6 @@ export default function Events(props) {
 Events.propTypes = {
   eventTitle: PropTypes.string,
   eventAbout: PropTypes.string,
-  eventImg: PropTypes.string
+  eventImg: PropTypes.string,
+  eventUrl: PropTypes.string
 };
