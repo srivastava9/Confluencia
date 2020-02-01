@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f28faa85.chunk.css",
+    "main.js": "/static/js/main.9bc919aa.chunk.js",
+    "main.js.map": "/static/js/main.9bc919aa.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b1df109b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b1df109b.js.map",
+    "static/js/2.2ec75932.chunk.js": "/static/js/2.2ec75932.chunk.js",
+    "static/js/2.2ec75932.chunk.js.map": "/static/js/2.2ec75932.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.969883034f8220ed1ebb500716634d94.js": "/precache-manifest.969883034f8220ed1ebb500716634d94.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.f28faa85.chunk.css.map": "/static/css/main.f28faa85.chunk.css.map",
+    "static/media/DOMS_logo.png": "/static/media/DOMS_logo.0a01892e.png",
+    "static/media/DataWars.png": "/static/media/DataWars.54a4f9c6.png",
+    "static/media/Environmentalist.png": "/static/media/Environmentalist.ea7923bb.png",
+    "static/media/Mukesh_Jain.png": "/static/media/Mukesh_Jain.1d410986.png",
+    "static/media/event_common.css": "/static/media/abhivyakti_image.ecacd4f3.png",
+    "static/media/at.png": "/static/media/at.798767c5.png",
+    "static/media/hod.png": "/static/media/hod.bc1273f6.png",
+    "static/media/homepage_1_c.jpg": "/static/media/homepage_1_c.8e16048c.jpg",
+    "static/media/image_1.png": "/static/media/image_1.e9690720.png",
+    "static/media/image_2.png": "/static/media/image_2.f44cb623.png",
+    "static/media/image_4.png": "/static/media/image_4.92dd6975.png",
+    "static/media/image_5.png": "/static/media/image_5.4a08a689.png",
+    "static/media/image_6.png": "/static/media/image_6.408a3f13.png",
+    "static/media/logo.svg": "/static/media/logo.d41d8cd9.svg",
+    "static/media/logo.png": "/static/media/logo.fd39a116.png",
+    "static/media/outofthebox.jpg": "/static/media/outofthebox.2934c3a7.jpg",
+    "static/media/professor1.png": "/static/media/professor1.a9e468d1.png",
+    "static/media/professor2.png": "/static/media/professor2.3b5a77fc.png",
+    "static/media/professor3.png": "/static/media/professor3.7501f8c7.png",
+    "static/media/professor4.png": "/static/media/professor4.93b744c2.png",
+    "static/media/revolution_image.jpg": "/static/media/revolution_image.460e9dd8.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1df109b.js",
+    "static/js/2.2ec75932.chunk.js",
+    "static/css/main.f28faa85.chunk.css",
+    "static/js/main.9bc919aa.chunk.js"
+  ]
+}
