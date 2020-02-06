@@ -13,7 +13,7 @@ class StepTwo extends Component {
       error_message: ""
     };
   }
- 
+
   selectType = e => {
     this.setState({
       category: e.target.value
@@ -21,7 +21,7 @@ class StepTwo extends Component {
   };
   handleData = () => {
     if (
-      this.state.college===""||
+      this.state.college === "" ||
       this.state.program === "" ||
       this.state.year === "" ||
       this.state.program === ""
@@ -163,14 +163,13 @@ class StepTwo extends Component {
               />
             </div>
             <div className="step1_buttons">
-            <div className="step1_back" onClick={this.props.handleBack}>
-              Back
+              <div className="step1_back" onClick={this.props.handleBack}>
+                Back
+              </div>
+              <div className="step1_next" onClick={this.handleData}>
+                Go To Payment
+              </div>
             </div>
-            <div className="step1_next" onClick={this.handleData}>
-              Next
-            </div>
-            </div>
-           
           </div>
         </div>
       </div>

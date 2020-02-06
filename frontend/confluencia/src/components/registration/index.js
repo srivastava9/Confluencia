@@ -65,12 +65,16 @@ class Registration extends Component {
     form_data.append("gender", gender);
     form_data.append("invitecode", invitecode);
 
-    callApi.createProfile(form_data)
+    callApi
+      .createProfile(form_data)
       .then(() => {
         console.log("Success");
         this.setState({
           active_step: this.state.active_step + 1
         });
+
+        window.location.href =
+          "https://www.thecollegefever.com/events/confluencia20-yYLw2CamxC";
       })
       .catch(err => {
         console.log(err);
@@ -110,9 +114,7 @@ class Registration extends Component {
           />
         ) : null}
 
-        {active_step === 3
-          ? console.log(this.state, "ase")
-          : console.log("failure")}
+        {active_step === 3 ? console.log("success") : console.log("failure")}
       </div>
     );
   }
