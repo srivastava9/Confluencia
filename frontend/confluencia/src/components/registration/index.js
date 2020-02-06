@@ -114,7 +114,7 @@ class Registration extends Component {
           />
         ) : null}
 
-        {active_step === 3 ? console.log("success") : console.log("failure")}
+       {active_step === 3 ? console.log("success") : console.log("failure")}
       </div>
     );
   }
